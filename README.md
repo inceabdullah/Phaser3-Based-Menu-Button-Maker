@@ -76,8 +76,15 @@ $ cd phaser3-game
 # Install dependencies
 $ npm install
 
+# if webpack is not installed:
+$ npm install webpack webpack-dev-server -g
+
 # Start the local development server (on port 8080)
 $ npm start
+
+# or
+
+$ webpack-dev-server --config webpack/webpack.dev.js
 
 # Ready for production?
 # Build the production ready code to the /dist folder

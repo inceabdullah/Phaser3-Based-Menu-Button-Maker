@@ -1,5 +1,5 @@
 {
-  "name": "phaser-project-template",
+  "name": "phaser3-typescript-template",
   "version": "3.20.1",
   "description": "Phaser 3 starter template with TypeScript and webpack.",
   "homepage": "https://github.com/yandeu/phaser-project-template#readme",
