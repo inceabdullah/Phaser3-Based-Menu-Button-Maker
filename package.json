@@ -1,8 +1,8 @@
 {
-  "name": "phaser3-typescript-template",
-  "version": "3.20.1",
-  "description": "Phaser 3 starter template with TypeScript and webpack.",
-  "homepage": "https://github.com/yandeu/phaser-project-template#readme",
+  "name": "phaser3-based-menu-button-maker",
+  "version": "^3.20.1",
+  "description": "phaser3-based-menu-dynamic-button-maker",
+  "homepage": "https://github.com/inceabdullah/Phaser3-Based-Menu-Button-Maker",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack/webpack.dev.js",
@@ -12,29 +12,31 @@
     "Phaser",
     "Phaser 3",
     "Phaser3",
-    "html5 game",
+    "html5",
     "TypeScript",
     "webpack",
-    "starter"
+    "Menu",
+    "Button"
   ],
   "author": {
-    "name": "Yannick Deubel",
-    "url": "https://github.com/yandeu"
+    "name": "Abdullah ince",
+    "url": "https://github.com/inceabdullah"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yandeu/phaser-project-template.git"
+    "url": "https://github.com/inceabdullah/Phaser3-Based-Menu-Button-Maker.git"
   },
   "template": {
-    "name": "phaser-project-template",
-    "url": "https://github.com/yandeu/phaser-project-template",
-    "author": "Yannick Deubel (https://github.com/yandeu)"
+    "name": "phaser3-based-menu-button-maker",
+    "url": "https://github.com/inceabdullah/Phaser3-Based-Menu-Button-Maker",
+    "author": "Abdullah ince (https://github.com/inceabdullah)"
   },
   "engines": {
     "node": ">=8.0.0"
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^12.12.15",
     "clean-webpack-plugin": "^1.0.1",
     "copy-webpack-plugin": "^5.0.5",
     "html-webpack-plugin": "^3.2.0",

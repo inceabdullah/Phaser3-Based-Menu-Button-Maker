@@ -1,9 +1,21 @@
-import 'phaser'
-import MainScene from './scenes/mainScene'
-import PreloadScene from './scenes/preloadScene'
+import GlobalVars from './objects/globalVars'
 
-const DEFAULT_WIDTH = 1280
-const DEFAULT_HEIGHT = 720
+import 'phaser'
+// import MainScene from './scenes/mainScene'
+import TabScene from './scenes/tabScene'
+
+
+let DEFAULT_WIDTH = window.innerWidth * window.devicePixelRatio
+let DEFAULT_HEIGHT = window.innerHeight * window.devicePixelRatio
+
+
+const globalVarsClass = new GlobalVars(this)
+
+if (globalVarsClass.w !== null){
+  DEFAULT_WIDTH = window.innerWidth * window.devicePixelRatio
+  DEFAULT_HEIGHT = window.innerHeight * window.devicePixelRatio
+}
+
 
 // @ts-ignore https://github.com/photonstorm/phaser/issues/4522
 // still not working in 3.18.1 :/
@@ -16,17 +28,26 @@ const config: GameConfig = {
     width: DEFAULT_WIDTH,
     height: DEFAULT_HEIGHT
   },
-  scene: [PreloadScene, MainScene],
+
+  
+
+  scene: [TabScene], // MainScene only tab scene
   physics: {
     default: 'arcade',
-    arcade: {
-      debug: false,
-      gravity: { y: 400 }
-    }
+
   }
 }
 
 window.addEventListener('load', () => {
-  let game = new Phaser.Game(config)
+  
+  config.scale.DEFAULT_WIDTH = window.innerWidth * window.devicePixelRatio
+  config.scale.DEFAULT_HEIGHT = window.innerHeight * window.devicePixelRatio
+
+
+   
+  
+  const game = new Phaser.Game(config);
+
+
 })
 //
