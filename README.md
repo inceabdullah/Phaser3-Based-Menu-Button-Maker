@@ -1,4 +1,4 @@
-  [i use phaser3 typescript template repository from]("https://github.com/yandeu/phaser-project-template#readme") for using Phaser3 with typescript.
+  [i use phaser3 typescript template repository from](https://github.com/yandeu/phaser-project-template#readme) for using Phaser3 with typescript.
   <br>
   Phaser 3 Based Menu
   <br>
@@ -76,7 +76,7 @@ and of course:
 
 ![Phaser3 between React Native Webview postMessage](ss/phaser_button_in_react_native_webview_4.gif)
 
-the variable `tabPlus4Listen` is on the [index.html]('src/index.html') on Phaser3 Button page as:
+the variable `tabPlus4Listen` is on the [index.html](src/index.html) on Phaser3 Button page as:
 
 ```javascript
     <script type="text/javascript">      
@@ -84,7 +84,7 @@ the variable `tabPlus4Listen` is on the [index.html]('src/index.html') on Phaser
     </script>
 ```
 
-Listening to global variable changing is in `update()` function in [Phaser.Scene]('src/scripts/scenes/tabScene.ts') as:
+Listening to global variable changing is in `update()` function in [Phaser.Scene](src/scripts/scenes/tabScene.ts) as:
 
 ```javascript
   _tabPlusListen = () => {
