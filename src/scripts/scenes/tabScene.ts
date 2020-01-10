@@ -42,7 +42,7 @@ export default class PreloadScene extends Phaser.Scene {
   preload() {
     var url;
   
-    url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/plugins/dist/rexroundrectangleplugin.min.js';
+    url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexroundrectangleplugin.min.js';
     this.load.plugin('rexroundrectangleplugin', url, true);      
   
   }
@@ -278,6 +278,7 @@ export default class PreloadScene extends Phaser.Scene {
 
 
   _createTabRectangles = (tabXs, height, midHeight) => {
+
     const tabNumber = tabXs.length
     let _inFor_graphObject;
     let _inFor_fillAlpha;
@@ -449,7 +450,7 @@ export default class PreloadScene extends Phaser.Scene {
   }
 
   _tabPlusListen = () => {
-    if ( window.tabPlus4Listen === 0 ){ return }
+    if ( window.tabPlus4Listen === 0 ){ return true; }
     let newSelection = selectedTabOrder+window.tabPlus4Listen
     window.tabPlus4Listen = 0;
     if (newSelection === tabKeysObjects_.length){ newSelection = 0 }
