@@ -198,6 +198,32 @@ You know when *this.state* changed, WebView.souce.uri will be changed, then load
 i use this React Native code for [Haber Tellali App](https://github.com/inceabdullah/Haber-Tellali-3th-Wave-News-Service/blob/master/react-native/expo-typescript/App.tsx)   
 
 
+
+
+## Docker
+
+[Dockerfile](Dockerfile) is based on [this page](https://training.play-with-docker.com/beginner-linux/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 There are some errors when it is working:
 ```bash
 
